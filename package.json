@@ -33,6 +33,7 @@
     "vite": "^8.0.10"
   },
   "optionalDependencies": {
-    "@parcel/watcher-linux-x64-glibc": "^2.5.6"
+    "@parcel/watcher-linux-x64-glibc": "^2.5.6",
+    "@rolldown/binding-linux-x64-gnu": "^1.0.0-rc.18"
   }
 }
