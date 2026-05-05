@@ -1,16 +1,66 @@
-# React + Vite
+📝 Notes App - Full Stack com React + AWS Amplify
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação full stack desenvolvida com React utilizando Vite no frontend e AWS Amplify no backend. O projeto permite autenticação de usuários e gerenciamento de notas com suporte a upload de imagens.
 
-Currently, two official plugins are available:
+🚀 Funcionalidades
+Cadastro e login de usuários (autenticação)
+Criação de notas
+Listagem de notas
+Exclusão de notas
+Upload de imagens associadas às notas
+Deploy automático com integração ao GitHub
+🛠️ Tecnologias utilizadas
+React + Vite
+AWS Amplify
+AWS Amplify UI
+GraphQL (via Amplify Data)
+JavaScript
+Node.js
+📦 Instalação e execução
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Clone o repositório:
 
-## React Compiler
+git clone https://github.com/seu-usuario/notesapp.git
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Acesse a pasta do projeto:
 
-## Expanding the ESLint configuration
+cd notesapp
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Instale as dependências:
+
+npm install
+
+Execute o projeto:
+
+npm run dev
+☁️ Configuração do backend (AWS Amplify)
+
+Para configurar o backend, execute:
+
+npm create amplify@latest
+
+Depois, inicie o ambiente sandbox:
+
+npx ampx sandbox
+🔄 Deploy
+
+O deploy é feito automaticamente via AWS Amplify ao conectar o repositório do GitHub.
+
+A cada git push, uma nova versão da aplicação é publicada automaticamente.
+
+📁 Estrutura do projeto
+/src → código frontend React
+/amplify → configurações do backend (auth, data, storage)
+amplify_outputs.json → configuração gerada do backend
+📚 Aprendizados
+
+Este projeto foi desenvolvido com base em um tutorial prático da AWS, abordando:
+
+Integração entre frontend e backend serverless
+Autenticação com Amplify
+CRUD completo (Create, Read, Update, Delete)
+Upload e gerenciamento de arquivos
+Deploy contínuo (CI/CD)
+📌 Observações
+É necessário ter uma conta na AWS para rodar o backend completo
+O projeto pode gerar custos caso ultrapasse o Free Tier da AWS
